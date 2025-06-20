@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body, html{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* header  */
+header {
+    position: relative;
+    top: 20px;
+    left: 0;
+    /* background-color:#ffffff5f ; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    padding: 2px 10%;
+    box-shadow: 0 0 9px;
+    margin-left: 80px;
+    /* border-radius:10% ; */
+}
+
+/* menu  */
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    width: 35px;
+    cursor: pointer;
+}
+.menu ul {
+    display: flex;
+    margin-left: 25px;
+    list-style: none;
+    gap: 2rem;
+}
+.menu ul a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    margin-left: 10px;
+    position: relative;
+    font-size: 13px;
+}
+.menu ul a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    background-color:#f7a800 ;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    transition: 0.1s ease-out;
+}
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+
+/* header-end  */
+.header-end {
+    display: flex;
+    align-items: center;
+}
+.header-end i {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+/* logo  */
+.logo {
+    width: 80px;
+    cursor: pointer;
+    height: 80px;
+}
+#name {
+    position: absolute;
+    margin-left: 90px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(233, 162, 70);
+}
+
+/* button  */
+.header-end button {
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 15px;
+    background-color: maroon;
+    /* background-color: #bb2338; */
+    color: #fff;
+    margin-left: 10px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+button span {
+    font-family: 'Anton',sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button:hover {
+    transform: scale(1.06);
+}
+
+button img {
+    width:20px;
+    margin-left: 10px;
+}
+.fa-crown {
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+/* image-back */
+
+#image-back {
+    background: url('/Pojet TRIO/Image/interieur-chambre-chambre-hotel_23-2150683419.jpeg') no-repeat center;
+    background-size: cover;
+    top: -90px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.pp {
+    position: absolute;
+    color:black;
+    background-color: #ffffff62;
+    top: 150px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 35%;
+    height: 80px;
+    padding: 5px 10%;
+    margin-left: 80px;
+    /* border: 2px solid; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Search  */
+
+.search-bar {
+    background-color:rgba(255, 255, 255, 0.9) ;
+    display: flex;
+    padding: 20px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    gap: 15px;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+
+.search-item {
+    margin-bottom:5px ;
+    color: #333;
+}
+
+.search-item select,
+.search-item input {
+    font-size: 15px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+
+.seach-btn {
+    align-self: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #e8b96c, #d07b00);
+    column-rule: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+/* Presentaton Appart */
+
+.Appart {
+    margin: -70px 0;
+    padding: 0 10%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+}
+
+.Appart-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Appart-list img {
+    width: 350px;
+    top: 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+h3 p{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+.Appart-list {
+    margin-left: -50px;
+}
+.Appart-box {
+    display:flex;
+    flex-direction: row;
+}
+.Appart-box .box {
+    margin-left: 20px;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.Appart-box .box:hover {
+    transform: scale(1.06);
+}
+
+
+
+/* SECTION OFFRES */
+.offres-section {
+    padding: 4rem 0;
+}
+.offres-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.offres-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.offres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+.offres-button-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+.offres-button {
+     background-color: maroon;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.offres-button:hover {
+    background-color: rgba(128, 0, 0, 0.575);
+}
+
+
+
+/* SECTION3 services */
+.services-section {
+    background-color:#f3f4f6 ;
+    padding: 40px 0;
+}
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.services-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.services-grid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.service-carte {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+.service-carte:hover {
+    box-shadow:  0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.service-icon {
+    color: maroon;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.service-carte p {
+    color: #4b5563;
+}
+
+
+/* <!-- TEMOIGNAGE SECTION4  --> */
+.temoignages-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.temoignages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.temoignages-container  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.temoignages-grid {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    gap: 2rem;
+}
+.temoignages-carte {
+    background-color: #f3f4f6;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+.temoignages-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.temoignages-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+    background-color: maroon;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.temoignages-name {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.temoignages-stars {
+    color:  #fbbf24;
+    display: flex;
+    gap: 0.125rem;
+}
+.temoignages-carte p {
+    color: #4b5563;
+}
+
+
+/* SECTION CONTACT */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9; 
+}
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+ .contact-container h2{
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.contact-info {
+    background-color: maroon; 
+    color: white;
+    padding: 2rem;
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.info-description {
+    margin-bottom: 1.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info-item i {
+    margin-right: 1rem;
+}
+
+
+
+
+
